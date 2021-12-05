@@ -1,29 +1,68 @@
+/**
+    Common
+ */
 header {
     grid-area: header;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    font-size: xxx-large;
+    padding-top: 40px;
+    border-bottom: 2px solid #222;
 }
 
 body {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-areas:
-        "header header  header  header"
+        ".      header  header  ."
         "aside  section section section"
         "footer footer  footer  footer";
 }
 
+
+/**
+    Left Navigation Bar
+ */
 aside {
     grid-area: aside;
 }
 
 nav {
     display: flex;
+    flex-direction: column;
 }
 
+.lnb {
+    font-size: 1.15em;
+}
+
+.lnb a {
+    font-weight: bold;
+    font-family: sans-serif;
+    line-height: 1.4;
+    color: saddlebrown;
+    transition: color 0.5s;
+    transition-timing-function: cubic-bezier(0.2,1,0.3,1);
+}
+
+.lnb a:hover,
+.lnb a:focus {
+    color: black;
+}
+
+
+/**
+    Main Section
+ */
 section {
     display: grid;
     grid-area: section;
 }
 
+
+/**
+    Footer
+ */
 footer {
     display: flex;
     grid-area: footer;

@@ -1,8 +1,10 @@
 <!DOCTYPE html>
 <html lang="ko" xmlns:th="http://www.thymeleaf.org">
 <div th:fragment="fragment-lnb">
-    <nav><a th:href="@{/}">record.me</a></nav>
-    <nav><a th:href="@{/}">record.workout</a></nav>
-    <nav><a th:href="@{/}">record.diet</a></nav>
+    <nav th:class="lnb">
+        <a th:href="@{/}">record.me</a>
+        <a th:href="@{/}">record.workout</a>
+        <a th:href="@{/}">record.diet</a>
+    </nav>
 </div>
 </html>

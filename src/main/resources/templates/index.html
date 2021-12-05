@@ -4,17 +4,15 @@
     <meta charset="UTF-8">
     <title>fitness</title>
 </head>
-<link rel="stylesheet" type="text/css" href="../static/layout.css">
-<header>
-    HEADER
-</header>
+<link rel="stylesheet" type="text/css" href="layout.css">
 <body>
+    <header th:replace="/fragments/header.html :: fragment-header"></header>
     <aside th:replace="/fragments/leftNavigationBar.html :: fragment-lnb"></aside>
     <section>
         TEST
     </section>
+    <footer th:replace="/fragments/footer.html :: fragment-footer">
+        footer
+    </footer>
 </body>
-<footer>
-    footer
-</footer>
 </html>
